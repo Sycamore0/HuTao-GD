@@ -2,6 +2,7 @@ import { existsSync, readdirSync, statSync } from 'fs'
 import AbilityData from './OutputData/AbilityData'
 import AvatarData from './OutputData/AvatarData'
 import CombineData from './OutputData/CombineData'
+import CookData from './OutputData/CookData'
 import DropData from './OutputData/DropData'
 import DungeonData from './OutputData/DungeonData'
 import GadgetData from './OutputData/GadgetData'
@@ -35,6 +36,7 @@ export default async function convertFile(ver: string) {
   const writerList = [
     AbilityData,
     AvatarData,
+    CookData,
     CombineData,
     DropData,
     DungeonData,
